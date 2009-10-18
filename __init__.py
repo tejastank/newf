@@ -78,7 +78,7 @@ class Response(object):
     }
     
     def __init__(self, content='', headers={}, status_code=200):
-        self.status_code = status_code
+        self.set_status(status_code)
         self.set_content(content)
         self.headers = headers
         
